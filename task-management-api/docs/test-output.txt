@@ -1,0 +1,37 @@
+﻿
+> task-management-api@1.0.0 test
+> node --test tests/auth.test.js tests/tasks.test.js
+
+▶ Authentication & profile
+  ✔ registers a user (201) without exposing the password hash (105.1758ms)
+  ✔ stores a bcrypt hash, never the plain-text password (0.6578ms)
+  ✔ rejects a duplicate email (409) (7.4577ms)
+  ✔ validates the registration body (400 + details) (5.1312ms)
+  ✔ returns 400 for malformed JSON (4.9665ms)
+  ✔ logs in with correct credentials (200) (10.0254ms)
+  ✔ rejects a wrong password and unknown email with the same 401 (8.0471ms)
+  ✔ GET /api/auth/me returns the current user with a valid token (6.6757ms)
+  ✔ protected routes need a valid token (401) (7.3569ms)
+  ✔ updates the profile; changing the password needs the current one (26.5824ms)
+  ✔ logout revokes the token (3.4578ms)
+  ✔ unknown routes return a JSON 404 (1.7546ms)
+✔ Authentication & profile (195.4412ms)
+▶ Projects & tasks
+  ✔ creates and lists projects with pagination (31.4573ms)
+  ✔ creates a task with defaults, and validates input (27.2004ms)
+  ✔ filters by status, priority and due date, and sorts (39.9116ms)
+  ✔ keeps other users out of projects and tasks (403 / hidden) (18.0314ms)
+  ✔ assigns a task; the assignee can see it and change only its status (24.2388ms)
+  ✔ updates a task (owner) and rejects an empty update (7.0213ms)
+  ✔ builds a task summary report and exports it as a JSON file (9.94ms)
+  ✔ survives many concurrent writes without losing data (118.2224ms)
+  ✔ deletes a task, and deleting a project deletes its tasks (16.5576ms)
+✔ Projects & tasks (416.1708ms)
+ℹ tests 21
+ℹ suites 2
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1171.1112

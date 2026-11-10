@@ -1,0 +1,26 @@
+[
+  {
+    "id": "e9c783ae-c3a7-4380-bd5d-412201f5c98f",
+    "name": "Muhsin",
+    "email": "user128930777@test.com",
+    "passwordHash": "$2b$10$st1v9M5R8Er8veJYqRbJle/BYBmx3KUyE1nsY1X4JlGcnTYICHIrm",
+    "createdAt": "2026-11-06T10:04:26.065Z",
+    "updatedAt": "2026-11-06T10:04:26.065Z"
+  },
+  {
+    "id": "409a1a09-8180-434c-9541-a90125b09a69",
+    "name": "Muhsin",
+    "email": "muhsin@example.com",
+    "passwordHash": "$2b$10$byjeFS7lHnCmR.BOP9HlxeGAEXk5znH2xUT1KWwDwQl8KCf0MeZfS",
+    "createdAt": "2026-11-09T06:25:15.283Z",
+    "updatedAt": "2026-11-09T06:25:15.283Z"
+  },
+  {
+    "id": "a00f6a39-7c7b-42e3-b820-0af1839264aa",
+    "name": "muhsin",
+    "email": "muhammed@gmail.com",
+    "passwordHash": "$2b$10$ttaHU3XkZvxs8iIoKLBO.OP0Cq3/H.Mif6oXRqzq.CaArUFRChMxC",
+    "createdAt": "2026-11-09T06:30:18.195Z",
+    "updatedAt": "2026-11-09T06:30:18.195Z"
+  }
+]
